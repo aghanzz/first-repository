@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght,GRAD@8..144,50..150,500,50&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", serif;
+}
+
+a {
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+  background-color: #cafdff;
+}
+
+
+/* ─────────────────────────────────────
+   NAV
+───────────────────────────────────── */
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  background-color: #cafdff;
+}
+
+.logo {
+  width: 300px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  padding-left: 16px;
+}
+
+/* ─────────────────────────────────────
+   HERO / HEADER
+───────────────────────────────────── */
+
+header {
+  background-color: #eadcff;
+  height: calc(100vh - 70px);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 68px;
+  text-align: center;
+}
+
+.subheader {
+  font-size: 24px;
+  text-align: center;
+  margin: 16px 0 24px 0;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 24px;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  background-color: #6d28d9;
+}
+
+/* ─────────────────────────────────────
+   SECTIONS — SHARED
+───────────────────────────────────── */
+
+#about,
+#discord,
+#contact,
+#footer {
+  padding: 48px 0;
+}
+
+/*
+
+ABOUT
+
+*/
+#about {
+  background-color: #f8ffdc;
+}
+
+h2 {
+  font-size: 68px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__img--wrapper {
+  width: 40%;
+}
+
+img {
+  width: 100%;
+}
+
+.section__description--wrapper {
+  width: 60%;
+}
+
+.about__img--wrapper,
+.section__description--wrapper {
+  padding: 0 24px;
+}
+  
+
+.section__description--para {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/*
+
+DISCORD
+
+*/
+
+#discord {
+  background-color: #cefeff;
+  padding: 48px 0;
+}
+
+
+/*
+
+CONTACT
+
+*/
+
+#contact {
+  background-color: #dce9ff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+input, textarea {
+  padding: 6px 12px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #cafdff;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__logo {
+  max-width: 300px;
+  margin-bottom: 16px;
+}
+
+.footer__links {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.footer__link  {
+  padding: 0 4px;
+  font-size: 18px;
+}
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+ul {
+    display: none;
+  }   
+  
+  .row {
+    flex-direction: column;
+  }
+  .about__img--wrapper,
+  .section__description--wrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .home__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .subheader {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #discord .section__description {
+    flex-direction: column-reverse;
+  }
+
+  footer {
+    padding: 48px 24px;
+  }
+
+  .footer__logo {
+    max-width: 200px;
+  }
+
+  .footer__link {
+    padding:0 4px;
+    font-size: 18px;
+  }
+
+  .footer__links {
+    margin-bottom: 24px;
+  }
+}
+
+
+  
